@@ -7,7 +7,7 @@ Welcome to the Credit Suisse Coding Challenge 2018! Below are instructions for g
 
 Challenge Questions are available on our website at www.credit-suisse.com/codingchallenge.
 
-To get started, first fork this repository in order to obtain your own copy. Please note that per Challenge rules <b>this repository must be visible to us</b>.
+To get started, first fork this repository in order to obtain your own copy. Please note that per Challenge rules <b>this repository must be visible to us (CS-CodingChallenge)</b>.
 
 This can be achieved by either keeping the repository public, or by adding <insert username here> as a viewer to the private repository.
 
@@ -45,7 +45,7 @@ In order to submit your code to the Automated Evaluator, it first needs to be de
 4) Deploy to Heroku using <code>git push heroku master</code> (Please note, this doesn't push to your original repository, so remember to push your changes there as well frequently).
 5) Your solution will be deployed to Heroku. You can see the logs to your server using <code>heroku logs --tail</code>
 
-<b>Please note - for your solution to be considered valid, you must grant access to your Heroku server to INSERT_HERE</b>. This can be done on the Heroku website.
+<b>Please note - for your solution to be considered valid, you must grant access to your Heroku server to challenge.coding@credit-suisse.com</b>. This can be done on the Heroku website.
 
 #### Tell us you've deployed
 
