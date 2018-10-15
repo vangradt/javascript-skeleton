@@ -1,0 +1,25 @@
+{
+  "name": "javascript-skeleton",
+  "version": "1.0.0",
+  "description": "",
+  "main": "questionController.js",
+  "dependencies": {
+    "@babel/core": "^7.1.2",
+    "babel": "^6.23.0",
+    "bluebird": "^3.5.2",
+    "body-parser": "^1.18.3",
+    "eslint": "^5.7.0",
+    "express": "^4.16.4",
+    "http": "0.0.0",
+    "performance-now": "^2.1.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.1.0",
+    "babel-cli": "^6.26.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
