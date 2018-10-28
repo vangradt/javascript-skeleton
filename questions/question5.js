@@ -3,16 +3,21 @@
 function answer05(allowedAllocations, totalValue) {
     let T = [0];
 
-    for(let i = 1; i <= totalValue; i++) {
+    allowedAllocations.sort(function(a, b){return a-b});
+
+    let maxValue = totalValue;
+
+    while(maxValue % allowedAllocations[0] !== 0)
+        maxValue++;
+
+    for(let i = 1; i <= maxValue; i++) {
         T.push(Number.MAX_SAFE_INTEGER);
     }
-
-    allowedAllocations.sort(function(a, b){return a-b});
 
     for (let j = 0; j < allowedAllocations.length; j++) {
         let current = allowedAllocations[j];
 
-        for (let i = 0; i <= totalValue - current; i++) {
+        for (let i = 0; i <= maxValue - current; i++) {
             if (T[i] < Number.MAX_SAFE_INTEGER) {
                 if (T[i] + 1 < T[i + current]) {
                     T[i + current] = T[i] + 1;
@@ -21,7 +26,12 @@ function answer05(allowedAllocations, totalValue) {
         }
     }
 
+    while (T[totalValue] === Number.MAX_SAFE_INTEGER) {
+        totalValue++;
+    }
+
     return T[totalValue];
+
 }
 
 module.exports = answer05
