@@ -26,7 +26,7 @@ function answer05(allowedAllocations, totalValue) {
         }
     }
 
-    while (T[totalValue] === Number.MAX_SAFE_INTEGER) {
+    while (T[totalValue] === Number.MAX_SAFE_INTEGER && totalValue < maxValue) {
         totalValue++;
     }
 
