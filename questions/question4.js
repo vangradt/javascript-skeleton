@@ -18,8 +18,10 @@ function answer04(rows, numberMachines) {
 
                 sum += rows[i][j];
 
-                if(l === numberMachines && sum < min) {
-                    min = sum;
+                if(l === numberMachines) {
+
+                    if (sum < min)
+                        min = sum;
 
                     sum -= rows[i][j - l + 1];
 
